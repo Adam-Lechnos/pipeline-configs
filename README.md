@@ -19,8 +19,8 @@ Pipeline Files | [pipeline_files](#pipeline_files) | reference by the pipeline s
 **Editing JSON Bake File**
  * Change the following pamaters for the bake.json file in the root directory of the repo as follows:
     * "name"
-      * only specify packages that are certain to not be included by developers inside their image repo bake.json's otherwise baking will fail when this file is stubbed in.
-      * replace with name of the [package repo](https://github.factset.com/market-data-cloud/quotes_wiki.doc/wiki/Git-Repos#packages) required as part of image bake.
+      * only specify packages that are certain not to be included by developers inside their image repo bake.json's otherwise baking will fail when this file is stubbed in.
+      * replace with the name of the package repo, required as part of image bake.
       * i.e, 'FDSCbase_config.pkg'
     * "version"
       * version of the package desired for bake. semantic versioning with wild cards only are accepted.
@@ -31,7 +31,7 @@ Pipeline Files | [pipeline_files](#pipeline_files) | reference by the pipeline s
  
 #### Example
 
-filename: quotes_default.json
+filename: org_default.json
  
  ```
 {
